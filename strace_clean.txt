@@ -1,0 +1,77 @@
+33679 execve("./bitonicsort", ["./bitonicsort", "8", "2", "--print"], 0x7ffd502bd300 /* 92 vars */) = 0
+33679 brk(NULL)                         = 0x55d6e86f3000
+33679 mmap(NULL, 8192, PROTREADPROTWRITE, MAPPRIVATEMAPANONYMOUS, -1, 0) = 0x754ae8ea4000
+33679 access("/etc/ld.so.preload", ROK) = -1 ENOENT (Нет такого файла или каталога)
+33679 openat(ATFDCWD, "/etc/ld.so.cache", ORDONLYOCLOEXEC) = 3
+33679 fstat(3, stmode=SIFREG0644, stsize=69787, ...) = 0
+33679 mmap(NULL, 69787, PROTREAD, MAPPRIVATE, 3, 0) = 0x754ae8e92000
+33679 close(3)                          = 0
+33679 openat(ATFDCWD, "/lib/x8664-linux-gnu/libc.so.6", ORDONLYOCLOEXEC) = 3
+33679 read(3, "\\177ELF\\2\\1\\1\\3\\0\\0\\0\\0\\0\\0\\0\\0\\3\\0\\0\\1\\0\\0\\0\\220\\243\\2\\0\\0\\0\\0\\0"..., 832) = 832
+33679 pread64(3, "\\6\\0\\0\\0\\4\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0"..., 784, 64) = 784
+33679 fstat(3, stmode=SIFREG0755, stsize=2125328, ...) = 0
+33679 pread64(3, "\\6\\0\\0\\0\\4\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0@\\0\\0\\0\\0\\0\\0\\0"..., 784, 64) = 784
+33679 mmap(NULL, 2170256, PROTREAD, MAPPRIVATEMAPDENYWRITE, 3, 0) = 0x754ae8c00000
+33679 mmap(0x754ae8c28000, 1605632, PROTREADPROTEXEC, MAPPRIVATEMAPFIXEDMAPDENYWRITE, 3, 0x28000) = 0x754ae8c28000
+33679 mmap(0x754ae8db0000, 323584, PROTREAD, MAPPRIVATEMAPFIXEDMAPDENYWRITE, 3, 0x1b0000) = 0x754ae8db0000
+33679 mmap(0x754ae8dff000, 24576, PROTREADPROTWRITE, MAPPRIVATEMAPFIXEDMAPDENYWRITE, 3, 0x1fe000) = 0x754ae8dff000
+33679 mmap(0x754ae8e05000, 52624, PROTREADPROTWRITE, MAPPRIVATEMAPFIXEDMAPANONYMOUS, -1, 0) = 0x754ae8e05000
+33679 close(3)                          = 0
+33679 mmap(NULL, 12288, PROTREADPROTWRITE, MAPPRIVATEMAPANONYMOUS, -1, 0) = 0x754ae8e8f000
+33679 archprctl(ARCHSETFS, 0x754ae8e8f740) = 0
+33679 settidaddress(0x754ae8e8fa10)   = 33679
+33679 setrobustlist(0x754ae8e8fa20, 24) = 0
+33679 rseq(0x754ae8e90060, 0x20, 0, 0x53053053) = 0
+33679 mprotect(0x754ae8dff000, 16384, PROTREAD) = 0
+33679 mprotect(0x55d6d5add000, 4096, PROTREAD) = 0
+33679 mprotect(0x754ae8ee2000, 8192, PROTREAD) = 0
+33679 prlimit64(0, RLIMITSTACK, NULL, rlimcur=8192*1024, rlimmax=RLIM64INFINITY) = 0
+33679 munmap(0x754ae8e92000, 69787)     = 0
+33679 getrandom("\\x77\\xc4\\x88\\x8e\\x7c\\x42\\x8c\\xa0", 8, GRNDNONBLOCK) = 8
+33679 brk(NULL)                         = 0x55d6e86f3000
+33679 brk(0x55d6e8714000)               = 0x55d6e8714000
+33679 fstat(1, stmode=SIFCHR0620, strdev=makedev(0x88, 0), ...) = 0
+33679 write(1, "Bitonic sort: 8 elements, max th"..., 41) = 41
+33679 getpid()                          = 33679
+33679 write(1, "PID: 33679\\n", 11)      = 11
+33679 write(1, "Run in another terminal: watch '"..., 78) = 78
+33679 write(1, "Original array:\\n", 16) = 16
+33679 write(1, "828 717 254 766 695 471 284 297 "..., 33) = 33
+33679 rtsigaction(SIGRT1, sahandler=0x754ae8c99530, samask=[], saflags=SARESTORERSAONSTACKSARESTARTSASIGINFO, sarestorer=0x754ae8c45330, NULL, 8) = 0
+33679 rtsigprocmask(SIGUNBLOCK, [RTMIN RT1], NULL, 8) = 0
+33679 mmap(NULL, 8392704, PROTNONE, MAPPRIVATEMAPANONYMOUSMAPSTACK, -1, 0) = 0x754ae83ff000
+33679 mprotect(0x754ae8400000, 8388608, PROTREADPROTWRITE) = 0
+33679 rtsigprocmask(SIGBLOCK, ~[], [], 8) = 0
+33679 clone3(flags=CLONEVMCLONEFSCLONEFILESCLONESIGHANDCLONETHREADCLONESYSVSEMCLONESETTLSCLONEPARENTSETTIDCLONECHILDCLEARTID, childtid=0x754ae8bff990, parenttid=0x754ae8bff990, exitsignal=0, stack=0x754ae83ff000, stacksize=0x7fff80, tls=0x754ae8bff6c0 = parenttid=[33681], 88) = 33681
+33679 rtsigprocmask(SIGSETMASK, [],  unfinished ...
+33681 rseq(0x754ae8bfffe0, 0x20, 0, 0x53053053 unfinished ...
+33679 ... rtsigprocmask resumedNULL, 8) = 0
+33681 ... rseq resumed)               = 0
+33679 futex(0x754ae8bff990, FUTEXWAITBITSETFUTEXCLOCKREALTIME, 33681, NULL, FUTEXBITSETMATCHANY unfinished ...
+33681 setrobustlist(0x754ae8bff9a0, 24) = 0
+33681 rtsigprocmask(SIGSETMASK, [], NULL, 8) = 0
+33681 rtsigprocmask(SIGBLOCK, ~[RT1], NULL, 8) = 0
+33681 madvise(0x754ae83ff000, 8368128, MADVDONTNEED) = 0
+33681 exit(0)                           = ?
+33679 ... futex resumed)              = 0
+33681 +++ exited with 0 +++
+33679 rtsigprocmask(SIGBLOCK, ~[], [], 8) = 0
+33679 clone3(flags=CLONEVMCLONEFSCLONEFILESCLONESIGHANDCLONETHREADCLONESYSVSEMCLONESETTLSCLONEPARENTSETTIDCLONECHILDCLEARTID, childtid=0x754ae8bff990, parenttid=0x754ae8bff990, exitsignal=0, stack=0x754ae83ff000, stacksize=0x7fff80, tls=0x754ae8bff6c0 = parenttid=[33682], 88) = 33682
+33682 rseq(0x754ae8bfffe0, 0x20, 0, 0x53053053 unfinished ...
+33679 rtsigprocmask(SIGSETMASK, [],  unfinished ...
+33682 ... rseq resumed)               = 0
+33679 ... rtsigprocmask resumedNULL, 8) = 0
+33682 setrobustlist(0x754ae8bff9a0, 24 unfinished ...
+33679 futex(0x754ae8bff990, FUTEXWAITBITSETFUTEXCLOCKREALTIME, 33682, NULL, FUTEXBITSETMATCHANY unfinished ...
+33682 ... setrobustlist resumed)    = 0
+33682 rtsigprocmask(SIGSETMASK, [], NULL, 8) = 0
+33682 rtsigprocmask(SIGBLOCK, ~[RT1], NULL, 8) = 0
+33682 madvise(0x754ae83ff000, 8368128, MADVDONTNEED) = 0
+33682 exit(0)                           = ?
+33679 ... futex resumed)              = 0
+33682 +++ exited with 0 +++
+33679 write(1, "Successfully sorted in 0.002342 "..., 40) = 40
+33679 write(1, "Sorted array:\\n", 14)   = 14
+33679 write(1, "254 284 297 471 695 717 766 828 "..., 33) = 33
+33679 exitgroup(0)                     = ?
+33679 +++ exited with 0 +++
